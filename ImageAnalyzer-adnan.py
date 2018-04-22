@@ -159,15 +159,11 @@ def parse(cls, api, raw):
 # ********************* Twitter Authentication ***************************
 # ************************************************************************
 
-# consumer_key = os.environ.get('TWITTER_CONS_KEY')
-# consumer_secret = os.environ.get('TWITTER_CONS_SECRET')
-# access_token = os.environ.get('TWITTER_ACCESS_TOKEN')
-# access_secret = os.environ.get('TWITTER_ACCESS_SECRET')
+consumer_key = os.environ.get('TWITTER_CONS_KEY')
+consumer_secret = os.environ.get('TWITTER_CONS_SECRET')
+access_token = os.environ.get('TWITTER_ACCESS_TOKEN')
+access_secret = os.environ.get('TWITTER_ACCESS_SECRET')
 
-consumer_key = 'VJszSPvP8IFWIKtdNskq52leQ'
-consumer_secret = 'eNK7w8juR2MiYqRAy7YxFHNUCVoaHsvWOhcgoMh6XivyRwGDHh'
-access_token = '4021413983-kQOrLRK0jpWw7V5RshKuMiFbTIo3yd67YKv4i1L'
-access_secret = 'l6tJlwLynjtQYNUX31eS4QqenW2a1tSPg189RoMGi61cX'
 
 # Status() is the data model for a tweet
 tweepy.models.Status.first_parse = tweepy.models.Status.parse
